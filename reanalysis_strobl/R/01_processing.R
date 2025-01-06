@@ -18,11 +18,11 @@ for (sample in unique(Strobl.metadata$BioSample)) {
     Strobl.metadata$Run[which(Strobl.metadata$BioSample == sample)], ".mito.bam"
   )
   command <- paste0("samtools merge ", sample, ".merged.mito.bam ", paste(bam.files, collapse = " "))
-  write(paste0("echo ", sample), file = "merge_bams.sh", sep = "\n", append = T)
-  write(command, file = "merge_bams.sh", sep = "\n", append = T)
-  write(paste0("mkdir ", sample), file = "merge_bams.sh", sep = "\n", append = T)
-  write(paste0("mv ", sample, ".merged.mito.bam ", sample), file = "merge_bams.sh", sep = "\n", append = T)
-  write(paste0("mgatk call -i ", sample, " -o ", sample, ".mgatk -c 8"), file = "merge_bams.sh", sep = "\n", append = T)
+  write(paste0("echo ", sample), file = "./reanalysis_strobl/merge_bams.sh", sep = "\n", append = T)
+  write(command, file = "./reanalysis_strobl/merge_bams.sh", sep = "\n", append = T)
+  write(paste0("mkdir ", sample), file = "./reanalysis_strobl/merge_bams.sh", sep = "\n", append = T)
+  write(paste0("mv ", sample, ".merged.mito.bam ", sample), file = "./reanalysis_strobl/merge_bams.sh", sep = "\n", append = T)
+  write(paste0("mgatk call -i ", sample, " -o ", sample, ".mgatk -c 8"), file = "./reanalysis_strobl/merge_bams.sh", sep = "\n", append = T)
 }
 close(fileConn)
 
