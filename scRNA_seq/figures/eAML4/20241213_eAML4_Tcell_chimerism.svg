@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='93.60pt' height='144.00pt' viewBox='0 0 93.60 144.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw5My42MHwwLjAwfDE0NC4wMA=='>
+    <rect x='0.00' y='0.00' width='93.60' height='144.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw5My42MHwwLjAwfDE0NC4wMA==)'>
+<rect x='0.00' y='0.00' width='93.60' height='144.00' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMzMuNTV8ODguMTJ8NS40OHwxMDEuMzM='>
+    <rect x='33.55' y='5.48' width='54.57' height='95.85' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMzMuNTV8ODguMTJ8NS40OHwxMDEuMzM=)'>
+<rect x='33.55' y='5.48' width='54.57' height='95.85' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+<rect x='53.16' y='83.53' width='15.35' height='13.44' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='36.11' y='9.84' width='15.35' height='87.13' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+<rect x='70.21' y='96.97' width='15.35' height='0.00' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #595959;' />
+</g>
+<g clip-path='url(#cpMC4wMHw5My42MHwwLjAwfDE0NC4wMA==)'>
+<polyline points='33.55,101.33 33.55,5.48 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<text x='28.62' y='100.55' text-anchor='end' style='font-size: 10.00px; font-family: "Arial";' textLength='5.57px' lengthAdjust='spacingAndGlyphs'>0</text>
+<text x='28.62' y='74.48' text-anchor='end' style='font-size: 10.00px; font-family: "Arial";' textLength='11.13px' lengthAdjust='spacingAndGlyphs'>20</text>
+<text x='28.62' y='48.40' text-anchor='end' style='font-size: 10.00px; font-family: "Arial";' textLength='11.13px' lengthAdjust='spacingAndGlyphs'>40</text>
+<text x='28.62' y='22.32' text-anchor='end' style='font-size: 10.00px; font-family: "Arial";' textLength='11.13px' lengthAdjust='spacingAndGlyphs'>60</text>
+<polyline points='30.81,96.97 33.55,96.97 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='30.81,70.89 33.55,70.89 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='30.81,44.82 33.55,44.82 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='30.81,18.74 33.55,18.74 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='33.55,101.33 88.12,101.33 ' style='stroke-width: 1.07; stroke-linecap: butt;' />
+<polyline points='43.78,104.07 43.78,101.33 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='60.83,104.07 60.83,101.33 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<polyline points='77.89,104.07 77.89,101.33 ' style='stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;' />
+<text transform='translate(47.36,106.26) rotate(-90)' text-anchor='end' style='font-size: 10.00px; font-family: "Arial";' textLength='27.81px' lengthAdjust='spacingAndGlyphs'>pre-ipi</text>
+<text transform='translate(64.42,106.26) rotate(-90)' text-anchor='end' style='font-size: 10.00px; font-family: "Arial";' textLength='27.81px' lengthAdjust='spacingAndGlyphs'>pre-ipi</text>
+<text transform='translate(81.47,106.26) rotate(-90)' text-anchor='end' style='font-size: 10.00px; font-family: "Arial";' textLength='32.26px' lengthAdjust='spacingAndGlyphs'>post-ipi</text>
+<text transform='translate(12.64,53.40) rotate(-90)' text-anchor='middle' style='font-size: 10.00px; font-family: "Arial";' textLength='80.83px' lengthAdjust='spacingAndGlyphs'>% recipient T cells</text>
+</g>
+</svg>
