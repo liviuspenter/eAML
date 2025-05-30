@@ -114,6 +114,9 @@ kinetics.long <- kinetics %>% tidyr::pivot_longer(
   names_to = "timepoint"
 )
 kinetics.long$recipient.variant <- paste0(kinetics.long$recipient, ".", kinetics.long$variant)
+kinetics.long$timepoint.integer <- as.numeric(stringr::str_split_fixed(kinetics.long$timepoint, pattern = "\\.", n = 2)[, 2])
+
+
 ggplot(
   kinetics.long[which(kinetics.long$timepoint %in% c("blood.-7", "blood.0", "blood.14", "blood.100", "blood.365")), ],
   aes(x = timepoint, y = 100 * value, color = variant)
@@ -132,6 +135,23 @@ ggplot(
 ggsave("./reanalysis_strobl/figures/20220824_Strobl_blood_longitudinal.svg", width = 2, height = 2)
 
 ggplot(
+  kinetics.long[which(kinetics.long$timepoint %in% c("blood.-7", "blood.0", "blood.14", "blood.100", "blood.365")), ],
+  aes(x = timepoint.integer, y = 100 * value, color = variant)
+) +
+  geom_point(size = 0.5) +
+  geom_line(aes(group = as.character(recipient.variant))) +
+  scale_x_continuous("Day post-HCT") +
+  scale_y_continuous("%mtDNA chimerism blood") +
+  scale_color_manual(values = c("donor" = "purple", "recipient" = "orange")) +
+  theme_classic() +
+  theme(
+    legend.position = "none",
+    axis.text = element_text("Arial", size = 10, color = "black"),
+    axis.title = element_text("Arial", size = 10, color = "black")
+  )
+ggsave("./reanalysis_strobl/figures/20250211_Strobl_blood_longitudinal.svg", width = 2, height = 2)
+
+ggplot(
   kinetics.long[which(kinetics.long$timepoint %in% c("skin.-7", "skin.14", "skin.100", "skin.365")), ],
   aes(x = timepoint, y = 100 * value, color = variant)
 ) +
@@ -147,6 +167,25 @@ ggplot(
     axis.title = element_text("Arial", size = 10, color = "black")
   )
 ggsave("./reanalysis_strobl/figures/20220824_Strobl_skin_longitudinal.svg", width = 2, height = 2)
+
+
+ggplot(
+  kinetics.long[which(kinetics.long$timepoint %in% c("skin.-7", "skin.14", "skin.100", "skin.365")), ],
+  aes(x = timepoint.integer, y = 100 * value, color = variant)
+) +
+  geom_point(size = 0.5) +
+  geom_line(aes(group = as.character(recipient.variant))) +
+  scale_x_continuous("Day post-HCT") +
+  scale_y_continuous("%mtDNA chimerism skin") +
+  scale_color_manual(values = c("donor" = "purple", "recipient" = "orange")) +
+  theme_classic() +
+  theme(
+    legend.position = "none",
+    axis.text = element_text("Arial", size = 10, color = "black"),
+    axis.title = element_text("Arial", size = 10, color = "black")
+  )
+ggsave("./reanalysis_strobl/figures/20250211_Strobl_skin_longitudinal.svg", width = 2, height = 2)
+
 
 # number of informative variants per case
 stats <- variants.all %>%
